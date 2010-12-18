@@ -77,6 +77,8 @@ public class CombatFlagsListener extends PluginListener {
 
     @Override
     public boolean onDamage(PluginLoader.DamageType type, BaseEntity attacker, BaseEntity defender, int amount) {
+        if(attacker == null || defender == null)
+            return false;
         if(!attacker.isPlayer() || !defender.isPlayer())
             return false;
         Player attackerPlayer = attacker.getPlayer();

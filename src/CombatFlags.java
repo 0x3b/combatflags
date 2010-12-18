@@ -11,7 +11,7 @@ public class CombatFlags extends Plugin {
     static final CombatFlagsListener listener = new CombatFlagsListener();
     private static final Logger logger = Logger.getLogger("Minecraft");
     public String pluginName = "CombatFlags";
-    public String pluginVersion = "0.1";    // TODO: Add some sort of build ID
+    public String pluginVersion = "0.1.1";    // TODO: Add some sort of build ID
 
     /**
      * Logs the unloading of the plug-in.
